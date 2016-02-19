@@ -21,7 +21,23 @@
             android:hint="Name"
             android:ems="10"
             android:layout_marginBottom="16dp"
-            android:id="@+id/nameText"/>
+            android:id="@+id/nameText"
+            style="@style/CustomText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Select Rook Location"
+            android:textAllCaps="true"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:entries="@array/rook_arrays"
+            android:prompt="@string/location_prompt"
+            android:layout_marginBottom="16dp"/>
 
         <TextView
             android:layout_width="wrap_content"

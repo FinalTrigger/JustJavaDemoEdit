@@ -130,7 +130,7 @@ public class MainActivity extends ActionBarActivity {
         priceMessage += "\nQuantity: " + quantity + "\n";
         priceMessage += "Add whipped cream: " + addWhippedCream + "\n";
         priceMessage += "Add chocolate: " + addChocolate + "\n";
-        priceMessage += "\nTotal: $ " + price;
+        priceMessage += "\nTotal: $ " + NumberFormat.getCurrencyInstance().format(price);
         priceMessage += "\nThank You!";
         fullOrder = priceMessage; //equal fullOrder to priceMessage to be used in Sending email order
 
